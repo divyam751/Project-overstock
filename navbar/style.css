@@ -12,7 +12,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid; */
 }
 
 input {
@@ -57,16 +56,16 @@ svg {
 }
 
 #ship {
-    /* border: 1px solid; */
-    margin: 0px;
+    border-bottom: 1px solid #dadcdf;
+    margin: 1px;
 }
 
 #ship {
     margin: 0px;
     display: flex;
     gap: 7px;
-    padding: 0px;
-    background-color: whitesmoke;
+    padding: 3px;
+    background-color: #f9fafb; 
 }
 
 #ship img {
@@ -79,12 +78,80 @@ svg {
 #ship p {
     margin-top: 10px;
 }
-#navbaritems {
+#navbaritems > ul {
     display: flex;
     justify-content: space-around;
+    display: flex;
+    /* list-style-type: none; */
+}
+#navbaritems{
+    /* display: flex; */
+   border-bottom: 1px solid #dadcdf;
+   border-top: 1px solid #dadcdf;
+    height: 45px;
+    /* align-items: center; */
 }
 a{
     text-decoration: none;
     color: black;
     font-size: 14px;
+} 
+.dropdown a:hover {
+   border-bottom: 1px solid black;
+   
+  }
+a {
+  text-decoration: none;
+}
+
+nav {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+li {
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color:black;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+ul li ul {
+	 background-color:#f9fafb ;
+	visibility: hidden;
+  opacity: 0;
+   min-width: 13rem; 
+	position: absolute;
+  transition: all 60s ease-in;
+  margin-top: 1rem;
+	left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  
+}
+
+ul li ul li {
+	clear: both;
+  width: 100%;
 }
