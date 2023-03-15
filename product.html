@@ -3,15 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mens products</title>
+    <title>furniture products</title>
     <style>
         #data {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
            
-            gap: 20px; /* sets gap between rows and columns */
-  row-gap: 15px; /* sets gap between rows only */
-  column-gap: 15px; 
+            gap: 20px; 
+             row-gap: 15px; 
+             column-gap: 15px; 
             justify-content:end;
              margin: 15%;
 
@@ -23,9 +23,7 @@
         }
         #data > div > div {
             display: flex;
-           
-         
-           
+      
         }
         img {
             width: 100%;
@@ -39,7 +37,9 @@
     </style>
 </head>
 <body>
-    
+     <div>
+    <p>Furniture/Living Room Furniture</p> 
+  </div>
     <div id="data"></div>
     
 </body>
@@ -52,6 +52,7 @@
       "https://ak1.ostkcdn.com/images/products/is/images/direct/eb3fbf0627b5ba8a73db004039ac20d24fdfa484/Carbon-Loft-Kenyon-Round-Metal-Wrap-Side-Table.jpg?imwidth=480&impolicy=medium",
       
       price : "8869.73",
+
       name: "Middlebrook Barnett Round Metal Wrap Side Table",
     
       
@@ -326,7 +327,8 @@ function displayProducts(){
         var image= document.createElement("img")
         image.setAttribute("src", elem.image_url)
         image.setAttribute("alt", elem.name)
-
+  
+ 
        
         var priceBox = document.createElement("div")
        var finalPrice= document.createElement("h4");
