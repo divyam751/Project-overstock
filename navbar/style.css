@@ -1,16 +1,16 @@
-
-
 #navbar img {
 
     width: 200px;
 }
-body{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
 #navbar {
-    margin-top: 0px;
+    margin-top: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,10 +29,12 @@ input {
     width: 65%;
     height: 30px;
 }
-
+#navbar div{
+    display: block;
+}
 button {
     width: 40px;
-    height: 36px;
+    height: 34px;
     background-color: red;
     border: none;
     margin-left: 0px;
@@ -63,112 +65,122 @@ svg {
 }
 
 #ship {
-    margin: 0px;
+    /* margin: 0px; */
     display: flex;
     gap: 7px;
     padding: 3px;
-    background-color: #f9fafb; 
+    background-color: #f9fafb;
+    align-items: top;
+    height: 30px;
 }
 
 #ship img {
     width: 28px;
     height: 20px;
-    border-radius: 7px;
+    border-radius: 10px;
     margin-top: 10px;
 }
-
+#ship p:nth-of-type(1){
+    font-size: 12px;
+    padding-top: 4px;
+    padding-left: 10px;
+    color: #bfc1c5;
+}
 #ship p {
     margin-top: 10px;
 }
+
 #navbaritems > ul {
-    display: flex;
+    display: flex; 
     justify-content: space-around;
-    display: flex;
-    /* list-style-type: none; */
+
 }
-#navbaritems{
-    /* display: flex; */
-   border-bottom: 1px solid #dadcdf;
-   border-top: 1px solid #dadcdf;
+
+#navbaritems {
+    border-bottom: 1px solid #dadcdf;
+    border-top: 1px solid #dadcdf;
     height: 45px;
-    /* align-items: center; */
+    align-items: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     font-size: 14px;
-} 
-.dropdown a:hover {
-   border-bottom: 1px solid black;
-   
-  }
+}
+
+li a:hover {
+    border-bottom: 1px solid black;
+}
+
 a {
-  text-decoration: none;
+    text-decoration: none;
+    justify-content: space-between;
 }
 
 nav {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 li {
-	display: block;
-	float: left;
-	padding: 1rem;
-	position: relative;
-	text-decoration: none;
-  transition-duration: 0.5s;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
 }
-  
+
 li a {
-  color:black;
+    color: black;
 }
 
 li:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 ul li ul {
-	 background-color:#f9fafb ;
-	visibility: hidden;
-  opacity: 0;
-   min-width: 13rem; 
-	position: absolute;
-  transition: all 60s ease-in;
-  margin-top: 1rem;
-	left: 0;
-  display: none;
+    background-color: #f9fafb;
+    visibility: hidden;
+    opacity: 1;
+    min-width: 15rem;
+    position: absolute;
+    transition: all 60s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
 }
 
-ul li:hover > ul,
+ul li:hover>ul,
 ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
 }
 
 ul li ul li {
-	clear: both;
-  width: 100%;
+    clear: both;
+    width: 100%;
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Project-overstock/style.css at navbar · divyam751/Project-overstock
+
+.dropdown li {
+    padding: 10px;
+}
+
+@media screen and (max-width: 970px) {
+    #navbaritems{
+        display: none;
+    }
+    #navbar > a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
