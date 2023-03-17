@@ -187,7 +187,7 @@ ul li ul li {
     font-size: 14px;
     border-radius: 8px;
   }
-  .fa  {
+  .fa{
     color: white;
     font-size: 20px;
   }
@@ -208,6 +208,7 @@ ul li ul li {
     color: #c7202c;
 
   }
+
 
 @media screen and (max-width: 970px) {
     #navbaritems{
