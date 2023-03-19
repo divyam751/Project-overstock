@@ -1,0 +1,56 @@
+#containerTitle{
+    margin-top:2%;
+    margin-bottom: 3%;
+      margin-left: 35px;
+     }
+ #furData {
+   display: grid;
+ 
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   row-gap: 15px;
+   column-gap: 15px;
+   margin: 70px;
+   margin-top : -5px; 
+ }
+ 
+ 
+           
+         #furData > div {
+          
+             border: 1px solid rgba(0, 0, 0, 0.1);
+          
+         }
+         #furData > div > div {
+             display: flex;
+ 
+         }
+         img {
+             width: 100%;
+         }
+   h5i {
+      color: red;
+      margin-bottom: 20px;
+     
+   }
+   .col-md-3 > p {
+    margin-bottom:25px;
+    margin-left: 30px;
+  }
+
+   
+   .sort-container {
+    margin-left: 82%;
+    margin-top: 50px
+    
+ }
+ 
+ .sort-container label {
+  margin-right: 5px;
+ }
+ 
+ @media only screen and (min-width: 768px) { /* change the breakpoint to suit your needs */
+   #furData {
+     grid-template-columns: repeat(3, 1fr);
+    
+   }
+ }
