@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP</title>
+  <link rel="stylesheet" href="./styles/OTP_style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+
+</head>
+<body>
+  <!-- Import navbar -->
+  <!-- <div id="webBox"> -->
+  
+    <div id="navbar"></div>
+    
+
+    <div id="parent">
+      <div id="child1">
+        <h1>Enter OTP</h1>
+        <hr>
+      </div>
+
+        <div id="child2">
+          <input type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1 id="inp1">
+          <input type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1 id="inp2">
+          <input type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1 id="inp3">
+          <input type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength=1 id="inp4">
+        </div>
+
+        <div id="child3">
+          <button>Verify</button>
+        </div>
+    <!-- </div> -->
+<!-- </div> -->
+
+</body>
+<script src="./js/OTP_script.js"></script>
+</html>
+
+ 

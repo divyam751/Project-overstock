@@ -1,0 +1,232 @@
+
+
+#imagesectionstarted{
+    display: flex;
+    /* align-items: center; */
+    gap: 40px;
+    /* border: 1px solid; */
+     box-sizing: border-box;
+     margin-top: 30px;
+  }
+  #namewithrate{
+    width: 50%;
+    /* border: 1px solid; */
+  }
+#namewithrate div:nth-of-type(1){
+  font-size: 30px;
+}
+  #slideshow-container {
+    /* border: 1px solid; */
+    max-width:32%;
+    /* position: relative; */
+    margin-left: 50px;
+    border-radius: 5px;
+  }
+  #imagediv{
+    margin-left: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+
+  
+  #namewithrate {
+      display: block;
+      width: 500px;
+  }
+  #namewithrate div{
+    margin : 10px 10px 20px 0px;
+  }
+  .imgsizeforratesec {
+    width: 60px;
+    gap: 10px;
+  }
+  #selectorAndAddcart{
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    gap:20px;
+    /* align-items: center; */
+   }
+  #quantityselector > select{
+    border-radius: 5px;
+    border-color: 1px #d5d7d8;
+  }
+  #quantityitems option{
+    font-size: 15px;
+  }
+  #addToCartProductDetail > button{
+    width: 230px;
+    padding: 12px;
+    background-color: #27865f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+  }
+  #favbtn{
+    width: 200px;
+    border: 1px solid #cacfd6;
+    /* margin: 0px; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  #favbtn > svg{
+    padding: 6px 5px 6px 0px;
+    width: 20px;
+    margin-top: 0px;
+    margin-right: 50px;
+    border-right: 1px solid #cacfd6;
+    border-collapse: collapse;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+    
+  }
+  .fa {
+    padding: 10px;
+    font-size: 28px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color:white;
+    border-radius: 50%;
+  }
+  .fa-google {
+    background: #dd4b39;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  .fa-twitter {
+    background: #00aff0;
+    color: white;
+  }
+  #sharediv > div{
+    margin-left: 50px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  #Reviewsfor5Star {
+    margin-left: 50px;
+    align-items: center;
+
+  }
+  #Reviewsfor5Star > img {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  #Reviewsfor5Star > a {
+    margin-top: 10px;
+    margin-left: 5px;
+    text-decoration:underline;
+  }
+#commentTable {
+  display: flex;
+  margin-left: 50px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-right: 350px;
+}
+.listItemcomment{
+  margin-right: 60px;
+}
+.listItemcomment:hover{
+  background-color: #e6e0e0;
+}
+#headerOfDetailsandSpec{
+  margin-left:50px;
+  margin-right: 300px;
+  display: flex;
+  gap: 480px;
+  font-weight: 400;
+  color: #2f3337;
+  font-size: 15px;
+  /* justify-content: space-around; */
+}
+
+#detailBoxandSpec{
+  /* width: 50%; */
+  font-size: 14px;
+  display: flex;
+  margin-left:50px;
+  margin-right: 300px;
+  gap: 20px;
+}
+#detailBox{
+  border: 1px solid #e8e8e8;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+}
+#detailBox > p{
+  font-size: 14px;
+  display: block;
+  
+}
+#specBox{
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+}
+
+#specBoxTable{
+  /* gap: 10px; */
+  /* border: 1px solid; */
+  width: 100%;
+  border-collapse: collapse;
+}
+td{
+  font-size: 14px;
+  padding: 7px 70px 10px 0px;
+  /* border: 1px solid; */
+  border-bottom: 1px dotted black;
+  border-top: 1px dotted;  
+  display: table-cell;
+}
+#specSelector{
+  width: 200px;
+  padding: 5px;
+
+}
+.bukket0 {
+    list-style-type: circle;
+}
+
+
+#reviewSection{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 300px;
+  padding: 0px;
+}
+
+#leftReviewSection{
+  display: flex;
+  /* border: 1px solid; */
+  width: 65%;
+  justify-content: space-between;
+  height: 60px;
+
+}
+#reviewcharthead{
+display: flex;
+/* margin: 0px;
+padding: 0px; */
+/* border: 1px solid; */
+/* gap: 10px; */
+} 
+#btnreview{
+  display: flex;
+  /* border: 1px solid ; */
+  gap: 18px;
+  padding: 10px;
+
+}
+#btnreview > button{
+    width: 160px;
+    padding: 10px;
+} 

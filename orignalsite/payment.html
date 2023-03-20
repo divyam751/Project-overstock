@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="./styles/Payment_style.css">
+    <link rel="stylesheet" href="./styles/navbarstyle.css">
+</head>
+<body>
+    <div class='container'>
+        <div class='window'>
+          <div class='order-info'>card
+            <div class='order-info-content'>
+              <h2>Recommended Products</h2>
+                      <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkdbt0STqTIkIo_HWvk-VLRa1upDAz-5S494fEZEw&s' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Chair</span>
+                      <br> Sitting Chair<br> <span class='thin small'> Color: Red Black<br><br></span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>₹ 400.00</div>
+                    </td>
+                  </tr>
+                </tbody>
+      
+              </table>
+              <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='https://images.woodenstreet.de/image/data/coffee-tables-mdf/kingston-coffee-table/flowery-wenge-revised/updated/1.jpg' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Table</span>
+                      <br>Room table<br> <span class='thin small'> Color: Dark Gray</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>₹ 1600.00</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='https://media.istockphoto.com/id/1252414324/photo/green-sofa-on-white-background-with-a-plaid-and-pillow-3d-rendering.jpg?s=612x612&w=0&k=20&c=dOofzh_3PWjGLljiwPOXnXxpi4oENQTsOOuVgnsHBWc=' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Sofa</span>
+                      <br>Double Sofa set<br> <span class='thin small'> Color: Sky Blue</span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>₹ 3000</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='https://www.chennaichairs.com/images/thumbs/0006307_apollo-executive-mesh-office-chair_625.webp' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Gaming Chair</span>
+                      <br>  Chair<br> <span class='thin small'> Color: Black<br><br></span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>₹ 2400.00</div>
+                    </td>
+                  </tr>
+                </tbody>
+      
+              </table>
+              <!-- <div class='line'></div>
+              <div class='total'>
+                <span style='float:left;'>
+                  <div class='thin dense'>GST 18%</div>
+                  <div class='thin dense'>Delivery</div>
+                  TOTAL
+                </span>
+                <span style='float:right; text-align:right;'>
+                  <div class='thin dense'>₹ 900.00</div>
+                  <div class='thin dense'>₹ 1500.00</div>
+                  ₹ 7400.00
+                </span>
+              </div> -->
+      </div>
+      </div>
+              <div class='credit-info'>
+                <div class='credit-info-content'>
+                  <table class='half-input-table'>
+                    <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                      <div class='dropdown-select'>
+                      <ul>
+                        <li>Master Card</li>
+                        <li>American Express</li>
+                        </ul></div>
+                      </div>
+                     </td></tr>
+                  </table>
+                  <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                  Card Number
+                  <input class='input-field'></input>
+                  Card Holder
+                  <input class='input-field'></input>
+                  <table class='half-input-table'>
+                    <tr>
+                      <td> Expires
+                        <input class='input-field'></input>
+                      </td>
+                      <td>CVC
+                        <input class='input-field'></input>
+                      </td>
+                    </tr>
+                  </table>
+                  <button class='pay-btn' onclick="payDone()">Checkout</button>
+      
+                </div>
+      
+              </div>
+            </div>
+      </div>
+    
+</body>
+<script src="./js/Payment_script.js"></script>
+</html>

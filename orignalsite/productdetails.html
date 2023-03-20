@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="./styles/navbarstyle.css">
+    <link rel="stylesheet" href="./styles/productdetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+  </head>
+<body>
+  <div id="nav-placeholder">
+    <div id="ship">
+      <P> Ship to: </P>
+      <br></br>
+      <img src="images\india.PNG">
+      <p> INDIA</p>
+  </div>
+  <div id="navbarstart">
+      <img id="logoclick" src="images\logo.png" alt="logo">
+      <div>
+          <input placeholder="Search...everything you find ship for free ">
+          <button id="navbarSearchBtn" type="submit"><i  class="fa fa-search"></i></button>
+      </div>
+      <div>
+          <svg class="iconsvg" width="56" height="22" viewBox="0 0 24 24" stroke="#2F3337"
+              fill="#2F3337">
+              <title>User</title>
+              <path d="M1 23c0-5.523 4.477-10 10-10h2c5.523 0 10 4.477 10 10M12 13a6 6 0 100-12 6 6 0 000 12z"
+                  stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+          </svg>
+          <br>
+          <!-- <img id="widthLogo" src="C:\Users\intel\Downloads\overstock\images\accountlogo.png"/> -->
+          <a href="account.html">Account</a>
+      </div>
+      <div>
+          <svg class="iconsvg" width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337"
+              fill="#2F3337">
+              <title>Heart</title>
+              <path d="M21.241 3.757A6 6 0 0012 4.684a6 6 0 10-9.242 7.558l9.241 9.243 9.243-9.243a6 6 0 000-8.485z"
+                  fill="none" stroke="inherit" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+          </svg>
+        <br>
+          <a href="index.html">List</a>
+      </div>
+      <div>
+        <div id="cartCount"></div>
+          <svg  class="iconsvg" width="30" height="21" viewBox="0 0 24 24" stroke="#2F3337"
+              fill="#2F3337">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.174 14.4L5.208.833C5.14.356 4.697 0 4.174 0h-3.13C.466 0 0 .43 0 .96s.467.96 1.043.96H3.26l1.966 13.567c.07.477.512.833 1.035.833h14.608c.498 0 .926-.323 1.024-.772l2.087-9.6c.113-.52-.254-1.025-.819-1.13-.565-.103-1.115.234-1.228.754L20.014 14.4H7.174zm.13 9.6a2.087 2.087 0 100-4.174 2.087 2.087 0 000 4.174zm14.61-2.087a2.087 2.087 0 11-4.175 0 2.087 2.087 0 014.174 0z"
+                  stroke="none" fill="inherit"></path>
+          </svg>
+          
+          <br>
+          <a href="cart.html"> Cart </a>
+      </div>
+  </div>
+  <div id="navbaritems">
+      <ul>
+        <li>
+          <a href="product.html" >Furniture</a>
+          <ul>
+            <li><a href="product.html">Living Room Furniture</a></li>
+            <li><a href="product.html">Patio Furniture</a></li>
+            <li><a href="product2.html"> Bedroom Furniture</a></li>
+            <li><a href=""> Office Furniture</a></li>
+            <li><a href="">Living Room Furniture</a></li>
+              <li><a href="">Patio Furniture</a></li>
+              <li><a href=""> Bedroom Furniture</a></li>
+              <li><a href=""> Office Furniture</a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Outdoors</a>
+          <ul>
+            <li><a href="">Patio Furniture</a></li>
+            <li><a href="">Garden </a></li>
+            <li><a href=""> Outdoor Decor </a></li>
+            <li><a href=""> Grills and Outdoor Cooking </a></li>
+            <li><a href=""> Outdoor Shades and Structures </a></li>
+              <li><a href="">Sport and Outdoor </a></li>
+              <li><a href=""> Bedroom Furniture</a></li>
+              <li><a href=""> Office Furniture</a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Rugs</a>
+          <ul>
+            <li><a href="">Area Rugs By Size </a></li>
+            <li><a href="">Trending Rugs</a></li>
+            <li><a href=""> Area Rugs by Color </a></li>
+            <li><a href=""> Area Rugs by Style </a></li>
+            <li><a href=""> Rugs By Types </a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Decor</a>
+          <ul>
+          <li><a href="">Mirrros </a></li>
+          <li><a href="">Faux Plants and Flowers </a></li>
+          <li><a href=""> Decorative Accessories  </a></li>
+          <li><a href=""> Window Treatments </a></li>
+          <li><a href=""> Arts </a></li>
+            <li><a href="">Throw Pillow </a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Bedding</a>
+          <ul>
+            <li><a href="">Bedding Sets</a></li>
+            <li><a href="">Bedding Essentials </a></li>
+            <li><a href="">Bed Sheets and Pollowcases</a></li>
+            <li><a href=""> Window Treatments </a></li>
+            <li><a href=""> Mattress Pads and Toppers </a></li>
+              <li><a href="">Mattress</a></li>
+              <li><a href="">Blankets</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="">Home Improvement</a>
+          <ul>
+            <li><a href="">Kitchens </a></li>
+            <li><a href="">Flooring and Wall </a></li>
+            <li><a href="">Bathroom </a></li>
+            <li><a href=""> Vacuums </a></li>
+            <li><a href=""> Storage and Organization </a></li>
+              <li><a href="">Home Essentials</a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="">Kitchen</a>
+          <ul>
+            <li><a href="">Dinnerware </a></li>
+            <li><a href="">Cookware and Bakeware </a></li>
+            <li><a href="">Kitchen Furniture</a></li>
+            <li><a href=""> Kitchen Appliances </a></li>
+            <li><a href=""> Coffee and Tea</a></li>
+              <li><a href=""> Kitchen Storage</a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="">Lighting</a>
+          <ul>
+            <li><a href="">Celing Lights</a></li>
+            <li><a href="">Ceiling Fans </a></li>
+            <li><a href="">Wall Lighting </a></li>
+            <li><a href=""> Outdoors Lighting</a></li>
+            <li><a href=""> Lamps and Lamps Shades </a></li>
+              <li><a href="">Kitchen and Bath Lighting</a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="">Kids & Baby</a>
+          <ul>
+            <li><a href="">Kids Furniture</a></li>
+            <li><a href="">Baby Furniture</a></li>
+            <li><a href="">Kids Bedding</a></li>
+            <li><a href=""> Nursery Decor</a></li>
+            <li><a href=""> Kids Bath </a></li>
+              <li><a href="">Baby bedding </a></li>
+            </ul>
+        </li> 
+        <li >
+          <a href="">Bath</a>
+          <ul>
+            <li><a href=""> Bathroom Rugs and Bath Mats</a></li>
+            <li><a href=""> Bathroom Accessories</a></li>
+            <li><a href=""> Towels</a></li>
+            <li><a href=""> Shower Curtains and Accessories</a></li>
+            <li><a href=""> Bathroom Renovation </a></li>
+            </ul>
+        </li>
+         <li>
+          <a href="">More</a>
+          <ul>
+            <li><a href="">Holiday</a></li>
+            <li><a href="">Large Appliances</a></li>
+            <li><a href="">Gifting </a></li>
+            <li><a href=""> Excerise Equipments </a></li>
+            <li><a href=""> Entryways</a></li>
+              <li><a href="">Brand We Love </a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="" >Ideas</a>
+          <ul>
+            <li><a href="">Holiday</a></li>
+            <li><a href="">Large Appliances</a></li>
+            <li><a href="">Gifting </a></li>
+            <li><a href=""> Excerise Equipments </a></li>
+            <li><a href=""> Entryways</a></li>
+              <li><a href="">Brand We Love </a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="" style="color: red;">Sales & Deals</a>
+        </li>
+      </ul>
+  </div>
+  </div>
+    <div id="imagesectionstarted">
+        <div id="container">
+                <!-- Full-width images with number and caption text -->
+                <div id="imagediv">
+                 
+                </div>
+              </div>
+        <div id="namewithrate">
+            <div id="namediv" >
+              
+            </div>
+              <div id="reviewadd">
+                
+                <h2 >Price : INR  3<span id="pricetag"></span> </h2>
+                <p> Color (2) : <span>Choose Color</span> </p>
+              </div>
+              <div>
+                <img class="imgsizeforratesec" src="https://ak1.ostkcdn.com/images/products/is/images/direct/63fe59ee2e568d599b494a02543e1062725b008c/HomCom-32%22-Long-Rectangle-All-Acrylic-20mm-Thick-Waterfall-Coffee-Table%2C-Clear.jpg">
+                <img class="imgsizeforratesec" src="https://ak1.ostkcdn.com/images/products/is/images/direct/63fe59ee2e568d599b494a02543e1062725b008c/HomCom-32%22-Long-Rectangle-All-Acrylic-20mm-Thick-Waterfall-Coffee-Table%2C-Clear.jpg">
+              </div>
+              <br></br>
+             <div id="selectorAndAddcart">
+                <div id="quantityselector">
+                    <select id="quantityitems">
+                        <option value="1"> Quantity : 1 </option>
+                        <option value="2"> Quantity : 2 </option>
+                        <option value="3"> Quantity : 3 </option>
+                        <option value="4"> Quantity : 4 </option>
+                        <option value="5"> Quantity : 5 </option>
+                        <option value="6"> Quantity : 6 </option>
+                        <option value="7"> Quantity : 7 </option>
+                        <option value="8">  Quantity : 8 </option>
+                        <option value="9"> Quantity : 9 </option>
+                        <option value="10"> Quantity : 10 </option>
+                    </select>
+                </div>
+                <div id="addToCartProductDetail">
+                    <button onclick="addtocartproduct()">Add to Cart </button>
+                </div>
+             </div>
+             <div>
+                ITEM# 16934216
+             </div>
+             <br>
+             <button id="favbtn">
+              <svg viewBox="0 0 32 32" data-is-favorited="true">
+                <path d="M16 29.688c-0.313 0-0.563-0.063-0.813-0.313l-11.125-10.75c-0.125-0.063-0.25-0.25-0.5-0.438-0.188-0.25-0.5-0.625-1-1.188-0.438-0.563-0.813-1.125-1.188-1.75-0.375-0.563-0.688-1.313-0.938-2.125-0.313-0.875-0.438-1.688-0.438-2.5 0-2.625 0.75-4.625 2.25-6.125s3.625-2.188 6.313-2.188c0.688 0 1.438 0.125 2.25 0.375 0.75 0.25 1.438 0.563 2.125 1s1.25 0.875 1.688 1.25c0.5 0.375 0.938 0.75 1.375 1.188 0.438-0.438 0.875-0.813 1.375-1.188 0.438-0.375 1-0.813 1.688-1.25s1.375-0.75 2.125-1c0.813-0.25 1.563-0.375 2.25-0.375 2.688 0 4.813 0.688 6.313 2.188s2.25 3.5 2.25 6.125c0 2.625-1.375 5.313-4.063 8.063l-11.125 10.688c-0.25 0.25-0.5 0.313-0.813 0.313z" class="active" data-is-favorited="true">
+                </path>
+              </svg>
+               Favorites
+              </button>
+        </div>
+    </div>
+    <div id="sharediv">
+      <div>
+        <i>Share This Product:</i>
+      </div>
+      <div>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+      </div>
+    </div>
+    <br>
+    <div id="Reviewsfor5Star">
+      Excellent product would recommed to all 
+      <br>
+      <img src="images/5star.png"> <a href=""> See all Reviews</a>
+    </div>
+    <br>
+  </br>
+  <div id="commentTable">
+    <ul>
+      <li class="listItemcomment"><a> Details & Specs</a></li>
+      <li class="listItemcomment"><a>Customer Reviews</a></li>
+      <li class="listItemcomment"><a>Q & A</a></li>
+      <li class="listItemcomment"><a>Tips & Inspiration </a></li>
+      <li class="listItemcomment"><a>Shipping & Return </a></li>
+    </ul>
+  </div>
+  <br>
+  <div id="headerOfDetailsandSpec"><h3>Details</h3> <h3> Specs</h3></div>
+  <div id="detailBoxandSpec">
+    
+    <div id="detailBox">
+      <p>ITEM#: 19187813</p>
+      <p>Add some clarity to your living room with HomCom' Rectangle All Acrylic Waterfall Coffee Table. 
+        This table is the perfect addition to any home, bringing with it a clean, stylish feel that 
+        is sure to add some life to your living space. Able to hold anything you might put on it, ]
+        this acrylic coffee table also boasts an easy to clean surface as well as a fresh feel for your house.</p>
+        <h3>Features</h3>
+        <ul class="bullet">
+          <li >Modern waterfall coffee table with durable acrylic that' easy to clean and maintain</li>
+          <li >Safe for daily use with rounded edges and corners, smooth and beautiful, safe for kids</li>
+          <li>Large and thick tabletop surface for holding laptops, plates, books, and magazines</li>
+          <li>Contemporary and elegant look, ideal for your living room, den, apartment, or office space</li>
+        </ul>
+      </div>
+    <div id="specBox">
+      <table id="specBoxTable" >
+        <thead> 
+          <tr >
+            <th colspan="2" style="text-align: left;"> Features <select id="specSelector"><option>English(Enlgish)</option></select>
+          </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Style</b></td>
+            <td>Traditional</td>
+          </tr>
+          <tr  >
+            <td><b>Material</b></td>
+            <td>	Metal, Wood</td>
+          </tr>
+          <tr  >
+            <td><b>Finish</b></td>
+            <td>	Satin</td>
+          </tr>
+          <tr  >
+            <td><b>Assembly</b></td>
+            <td>Assembly Required</td>
+          </tr>
+          <tr>
+            <td><b>Base Material</b></td>
+            <td>	Wood</td>
+          </tr>
+          <tr>
+            <td><b>Color</b></td>
+            <td>	Black, Brown, White</td>
+          </tr>
+          <tr>
+            <td><b>Counter Type</b></td>
+            <td>Wood</td>
+          </tr>
+          <tr>
+            <td><b>Island Type</b></td>
+            <td>Stationary</td>
+          </tr>
+          <tr>
+            <td><b>Product Features</b></td>
+            <td>	Drawers, Towel Rack</td>
+          </tr>
+          <tr>
+            <td><b>Set Includes</b></td>
+            <td>	1 Piece</td>
+          </tr>
+          <tr>
+            <td><b>Top Material</b></td>
+            <td>	Wood</td>
+          </tr>
+          <tr>
+            <td><b>Dimensions</b></td>
+            <td>	20.0 In. L X 40.0 In. W X 36.5 In. H</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br></br>
+  <div id="headerOfDetailsandSpec"><h3>Customer Reviews</h3></div>
+    <div id="reviewSection">
+      <div id="leftReviewSection">
+        <div id="reviewcharthead">
+          <p style="font-size: 55px;">4.4</p>
+          <div>
+            <img src="images/5star.png" alt="">
+            <p>29 reviews</p>
+          </div>
+        </div>
+        <div id="btnreview">
+           <button>See All Reviews</button>
+            <button>Write a Reviews</button>
+          </div>
+      </div>
+    </div>
+    <br></br>
+  <div id="footer">
+    <div>
+        <p> MY ACCOUNT</p>
+        <a href="https://www.overstock.com/myaccount?myacckey=order_info" >Orders & Return </a>
+        <a href="https://www.overstock.com/5522/static.html">Email Prefrences</a>
+        <a href="https://www.overstock.com/myaccount?myacckey=account_overview">Account Setting </a>
+    </div>
+    <div>
+        <p> LETS US HELP</p>
+        <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+        <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping Information </a>
+        <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+        <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help </a>
+        <a href="https://www.overstock.com/accessibility">Accessibility</a>
+    </div>
+    <div>
+        <p> COMPANY INFORMATION</p>
+        <a href="">About Overstock <span id="logofont">TM</span></a>
+        <a href="">Contact Us </a>
+        <a href="">Career</a>
+        <a href="">Investor Relations</a>
+        <a href="">Sell Your Products</a>
+        <a href="">Supply Chain Transparency</a>
+    </div>
+    <div>
+        <p> MORE WAYS TO SHOP</p>
+        <a href="">Tips & ideas</a>
+        <a href="">Deals </a>
+        <a href="">Clearance</a>
+        <a href="">New Arrivals</a>
+    </div>
+</div>
+
+<div id="lastDivFooter">
+    <div>
+        © Copyright 2023, Overstock.com®, Inc.<br>
+799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+    </div>
+    <div >
+        <a style="color: white;" " href="">Privacy Policy</a>
+        <a  style="color: white;" href="">Terms & Condition </a>
+        <a style="color: white;" href="">*Promotion Terms</a>
+        <a style="color: white;" href="">Ship to : <span > India</span></a>
+    </div>
+</div>
+</body>
+</html>
+<Script src="./js/productdetailsjs.js"></Script>
+<script src="./js/navbarscripting.js" > </script>
+<script src="./js/productdetailsjs.js"></script>

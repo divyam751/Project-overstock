@@ -1,0 +1,108 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#maindivaddress{
+    margin: 5px 150px 0px 150px;
+}
+#topofAddressPage{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  
+    border-bottom:1px solid;
+    border-color:aqua;
+}
+#topofAddressPage > div img{
+    width: 200px;
+    height: 50px;
+    /* padding-left: 0px; */
+}
+
+#topofAddressPage > div {
+    /* border: 1px solid; */
+    width: 30%;
+
+    color: #62892C;
+    font-size: 12px;
+}
+#smallinputforNo{
+    width: 22px;
+}
+table {
+    margin: 0px;
+    border: 1px solid #C3C3C3;
+    width: auto;
+    border-collapse: collapse;
+}
+td{
+    padding: 5px;
+}
+
+td{
+    text-align: left;
+}
+thead {
+    background-color: #f2f2f2;
+        
+}
+thead td{
+    border-bottom: 1px solid #C3C3C3;
+}
+#tabledivAddress{
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+
+}
+td{
+    width: 180px;
+     padding-right: 30px; 
+    padding-left: 10px;
+}
+input,select{
+    width: 210px;
+    height: 20px;
+    border:1px solid #A4A4A4;
+    /* margin: 10px; */
+    /* padding: 10px; */
+}
+#smallinputforNo + input{
+    width: 178px;
+}
+#lastupperdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* border: 1px solid;  */
+    
+    /* margin: 0px; */
+}
+#checkboxsel{
+    /* margin: 1px; */
+    width: 20px;
+}
+#lastdivpaymentsub{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#lastdivpaymentsub button{
+    /* width: 140px; */
+    padding: 8px;
+    background-color: #81a555;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+#termscondtion{
+    display: flex;
+    justify-content: space-around;
+    border-bottom:1px solid #A4A4A4;
+}
+#lastline{
+    display: flex;
+    justify-content: space-between;
+}

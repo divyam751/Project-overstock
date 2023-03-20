@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #62b4c6;
+        }
+        img{
+            padding: 5% 0 0 25%;
+            width: 50%;
+        }
+        hr{
+            width: 30%;
+        }
+        p{
+            text-align: center;
+        }
+        #pay1{
+            font-size: 50px;
+            margin-top: -10px;
+        }
+        #pay2{
+            font-size: 20px;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="Images/success.gif" alt="">
+    <div>
+        <p id="pay1"></p>
+        <p id="pay2"></p>
+
+    </div>
+</body>
+</html>
+<script>
+    setTimeout(function() {
+        var delayedText1 = document.getElementById('pay1');
+        delayedText1.innerHTML = 'Payment successful !';
+
+        var delayedText2 = document.getElementById('pay2');
+        delayedText2.innerHTML = ' Horray! You have completed your payment';
+
+      }, 4000);
+      // For redirect to Home page.
+
+      setTimeout(function() {
+        window.location.href = "index.html";
+
+      }, 6000);
+
+     
+</script>
