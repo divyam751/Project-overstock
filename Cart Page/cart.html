@@ -1,363 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <style>
-      #containerC {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-      #MainC {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 70%;
-      }
-      #mainC {
-        width: 100%;
-      }
-      #mainC > div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        /* background-color: whitesmoke; */
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: auto;
-        margin-top: 25px;
-        height: 300px;
-      }
-      #main1C {
-        width: 100%;
-      }
-      #main1C > div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        /* background-color: whitesmoke; */
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: auto;
-        margin-top: 25px;
-        height: 300px;
-      }
 
-      #main2C {
-        width: 100%;
-      }
-      #main2C > div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        background-color: whitesmoke;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: auto;
-        margin-top: 25px;
-        height: 300px;
-      }
-      .imageC {
-         width: 30%; 
-        height: 100%; 
-        margin-left: -60px;
-      }
-      .boxcart {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        align-self: flex-start;
-        margin-top: 30px;
-        margin-right: 50px;
-      }
-      #inputC {
-        border: 1px solid rgb(19, 18, 18);
-        border-radius: 5px;
-        padding: 8px 15px;
-        text-align: center;
-        width: 30%;
-        text-align: center;
-      }
-      #promoC {
-        color: #1a1818;
-        padding: 8px 5px;
-        /* background-color: white; */
-        border-radius: 5px;
-        margin: 20px;
-        border-color: rgb(13, 13, 13);
-        border-width: 1px;
-        text-align: center;
-      }
-      .removeC {
-        width: 35%;
-        background-color: #313233;
-        color: #ffffff;
-        padding: 8px;
-        border: none;
-        font-size: 15px;
-        margin-top: 20px;
-        text-align: center;
-      }
-      #paymentC {
-        width: 100%;
-        background-color: #313233;
-        color: #ffffff;
-        border-radius: 5px;
-        border: none;
-        font-size: 10px;
-        text-align: center;
-        font-size: large;
-      }
-      a {
-        text-decoration: none;
-        color: #000;
-      }
-      h2 {
-        text-align: left;
-        margin-left: 70px;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <!-- <style> -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles/cart.css" />
+  <link rel="stylesheet" href="./styles/navbarstyle.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <!-- </style> -->
+</head>
 
-
-    <h2>Shopping Cart</h2>
-    <div id="containerC">
-      <div id="MainC">
-        <div id="mainC"></div>
-        <div id="main1C"></div>
-        <div id="main2C"></div>
+<body>
+  <!-- Nevabr start -->
+  <div id="nav-placeholder">
+    <div id="ship">
+      <P> Ship to: </P>
+      <br></br>
+      <img src="images\india.PNG">
+      <p> INDIA</p>
+  </div>
+  <div id="navbarstart">
+    <a href="index.html">
+      <img src="images\logo.png" alt="logo">
+    </a>
+      
+      <div>
+          <input placeholder="Search...everything you find ship for free ">
+          <button id="navbarSearchBtn" type="submit"><i  class="fa fa-search"></i></button>
       </div>
-      <!-- <div id="costC"></div> -->
-      <div
-      style="
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 20%;
-        background-color: whitesmoke;
-        height: 300px;
-        text-align: center;
-        padding: 10px;
-        margin-right: 90px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      "
-    >
-      <p>Total Items :<span id="total-num"></span></p>
-      <p>Total Price : INR <span id="total-price"></span></p>
+      <div>
+          <svg class="iconsvg" width="52" height="22" viewBox="0 0 24 24" stroke="#2F3337"
+              fill="#2F3337">
+              <title>User</title>
+              <path d="M1 23c0-5.523 4.477-10 10-10h2c5.523 0 10 4.477 10 10M12 13a6 6 0 100-12 6 6 0 000 12z"
+                  stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+          </svg>
+          <br>
+          <!-- <img id="widthLogo" src="C:\Users\intel\Downloads\overstock\images\accountlogo.png"/> -->
+          <a href="account.html">Account</a>
+      </div>
+      <div>
+          <svg class="iconsvg" width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337"
+              fill="#2F3337">
+              <title>Heart</title>
+              <path d="M21.241 3.757A6 6 0 0012 4.684a6 6 0 10-9.242 7.558l9.241 9.243 9.243-9.243a6 6 0 000-8.485z"
+                  fill="none" stroke="inherit" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+          </svg>
+        <br>
+          <a href="index.html">List</a>
+      </div>
+      <div>
+        <div id="cartCount"></div>
+          <svg  class="iconsvg" width="35" height="21" viewBox="0 0 24 24" stroke="#2F3337"
+              fill="#2F3337">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.174 14.4L5.208.833C5.14.356 4.697 0 4.174 0h-3.13C.466 0 0 .43 0 .96s.467.96 1.043.96H3.26l1.966 13.567c.07.477.512.833 1.035.833h14.608c.498 0 .926-.323 1.024-.772l2.087-9.6c.113-.52-.254-1.025-.819-1.13-.565-.103-1.115.234-1.228.754L20.014 14.4H7.174zm.13 9.6a2.087 2.087 0 100-4.174 2.087 2.087 0 000 4.174zm14.61-2.087a2.087 2.087 0 11-4.175 0 2.087 2.087 0 014.174 0z"
+                  stroke="none" fill="inherit"></path>
+          </svg>
+          
+          <br>
+          <a href="cart.html"> Cart </a>
+      </div>
+  </div>
+  <div id="navbaritems">
+      <ul>
+        <li>
+          <a href="product.html" >Furniture</a>
+          <ul>
+            <li><a href="product.html">Living Room Furniture</a></li>
+            <li><a href="product.html">Patio Furniture</a></li>
+            <li><a href="product2.html"> Bedroom Furniture</a></li>
+            <li><a href=""> Office Furniture</a></li>
+            <li><a href="">Living Room Furniture</a></li>
+              <li><a href="">Patio Furniture</a></li>
+              <li><a href=""> Bedroom Furniture</a></li>
+              <li><a href=""> Office Furniture</a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Outdoors</a>
+          <ul>
+            <li><a href="">Patio Furniture</a></li>
+            <li><a href="">Garden </a></li>
+            <li><a href=""> Outdoor Decor </a></li>
+            <li><a href=""> Grills and Outdoor Cooking </a></li>
+            <li><a href=""> Outdoor Shades and Structures </a></li>
+              <li><a href="">Sport and Outdoor </a></li>
+              <li><a href=""> Bedroom Furniture</a></li>
+              <li><a href=""> Office Furniture</a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Rugs</a>
+          <ul>
+            <li><a href="">Area Rugs By Size </a></li>
+            <li><a href="">Trending Rugs</a></li>
+            <li><a href=""> Area Rugs by Color </a></li>
+            <li><a href=""> Area Rugs by Style </a></li>
+            <li><a href=""> Rugs By Types </a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Decor</a>
+          <ul>
+          <li><a href="">Mirrros </a></li>
+          <li><a href="">Faux Plants and Flowers </a></li>
+          <li><a href=""> Decorative Accessories  </a></li>
+          <li><a href=""> Window Treatments </a></li>
+          <li><a href=""> Arts </a></li>
+            <li><a href="">Throw Pillow </a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="">Bedding</a>
+          <ul>
+            <li><a href="">Bedding Sets</a></li>
+            <li><a href="">Bedding Essentials </a></li>
+            <li><a href="">Bed Sheets and Pollowcases</a></li>
+            <li><a href=""> Window Treatments </a></li>
+            <li><a href=""> Mattress Pads and Toppers </a></li>
+              <li><a href="">Mattress</a></li>
+              <li><a href="">Blankets</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="">Home Improvement</a>
+          <ul>
+            <li><a href="">Kitchens </a></li>
+            <li><a href="">Flooring and Wall </a></li>
+            <li><a href="">Bathroom </a></li>
+            <li><a href=""> Vacuums </a></li>
+            <li><a href=""> Storage and Organization </a></li>
+              <li><a href="">Home Essentials</a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="">Kitchen</a>
+          <ul>
+            <li><a href="">Dinnerware </a></li>
+            <li><a href="">Cookware and Bakeware </a></li>
+            <li><a href="">Kitchen Furniture</a></li>
+            <li><a href=""> Kitchen Appliances </a></li>
+            <li><a href=""> Coffee and Tea</a></li>
+              <li><a href=""> Kitchen Storage</a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="">Lighting</a>
+          <ul>
+            <li><a href="">Celing Lights</a></li>
+            <li><a href="">Ceiling Fans </a></li>
+            <li><a href="">Wall Lighting </a></li>
+            <li><a href=""> Outdoors Lighting</a></li>
+            <li><a href=""> Lamps and Lamps Shades </a></li>
+              <li><a href="">Kitchen and Bath Lighting</a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="">Kids & Baby</a>
+          <ul>
+            <li><a href="">Kids Furniture</a></li>
+            <li><a href="">Baby Furniture</a></li>
+            <li><a href="">Kids Bedding</a></li>
+            <li><a href=""> Nursery Decor</a></li>
+            <li><a href=""> Kids Bath </a></li>
+              <li><a href="">Baby bedding </a></li>
+            </ul>
+        </li> 
+        <li >
+          <a href="">Bath</a>
+          <ul>
+            <li><a href=""> Bathroom Rugs and Bath Mats</a></li>
+            <li><a href=""> Bathroom Accessories</a></li>
+            <li><a href=""> Towels</a></li>
+            <li><a href=""> Shower Curtains and Accessories</a></li>
+            <li><a href=""> Bathroom Renovation </a></li>
+            </ul>
+        </li>
+         <li>
+          <a href="">More</a>
+          <ul>
+            <li><a href="">Holiday</a></li>
+            <li><a href="">Large Appliances</a></li>
+            <li><a href="">Gifting </a></li>
+            <li><a href=""> Excerise Equipments </a></li>
+            <li><a href=""> Entryways</a></li>
+              <li><a href="">Brand We Love </a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="" >Ideas</a>
+          <ul>
+            <li><a href="">Holiday</a></li>
+            <li><a href="">Large Appliances</a></li>
+            <li><a href="">Gifting </a></li>
+            <li><a href=""> Excerise Equipments </a></li>
+            <li><a href=""> Entryways</a></li>
+              <li><a href="">Brand We Love </a></li>
+            </ul>
+        </li>
+        <li >
+          <a href="" style="color: red;">Sales & Deals</a>
+        </li>
+      </ul>
+  </div>
+  </div>
+
+  <h2>Shopping Cart</h2>
+
+  <!-- <div id="cart-container"></div> -->
+
+
+  <div id="containerC">
+    <div id="MainC">
+      <div id="mainC"></div>
+      <div id="main1C"></div>
+      <div id="main2C"></div>
+    </div>
+
+    <div id="mainPrice-cart">
+      <p>Total Items :<span id="total-num">0</span></p>
+      <h5>Total Price : INR <span id="total-price">0</span></h5>
       <div>
         <input id="inputC" placeholder="Add a Promo Code" />
         <button id="promoC">Apply</button>
       </div>
-      <a style="padding: 10px 0;" id="paymentC" href="address.html">Check Out</a>
+      <!-- <a style="padding: 10px 0;" id="paymentC" href="address.html">Check Out</a> -->
+      <button id="paymentC"><i class="fa-solid fa-lock"></i> Check Out</button>
     </div>
+  </div>
+
+  <!-- footer start -->
+  <div id="footer">
+    <div>
+      <p> MY ACCOUNT</p>
+      <a href="https://www.overstock.com/myaccount?myacckey=order_info">Orders & Return </a>
+      <a href="https://www.overstock.com/5522/static.html">Email Prefrences</a>
+      <a href="https://www.overstock.com/myaccount?myacckey=account_overview">Account Setting </a>
     </div>
-  </body>
-  <script>
-   
-    var cartC = JSON.parse(localStorage.getItem("aadToCart1")) || [];
-    var cart2C = JSON.parse(localStorage.getItem("aadToCart2")) || [];
-    var cart3C = JSON.parse(localStorage.getItem("aadToCart3")) || [];
+    <div>
+      <p> LETS US HELP</p>
+      <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+      <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping Information
+      </a>
+      <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+      <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help </a>
+      <a href="https://www.overstock.com/accessibility">Accessibility</a>
+    </div>
+    <div>
+      <p> COMPANY INFORMATION</p>
+      <a href="">About Overstock <span id="logofont">TM</span></a>
+      <a href="">Contact Us </a>
+      <a href="">Career</a>
+      <a href="">Investor Relations</a>
+      <a href="">Sell Your Products</a>
+      <a href="">Supply Chain Transparency</a>
+    </div>
+    <div>
+      <p> MORE WAYS TO SHOP</p>
+      <a href="">Tips & ideas</a>
+      <a href="">Deals </a>
+      <a href="">Clearance</a>
+      <a href="">New Arrivals</a>
+    </div>
+  </div>
 
-    var deleteArrC = JSON.parse(localStorage.getItem("deleteArr")) || [];
-    var cartValC = 0;
-    var cartVal1C = 0;
-    var cartVal2C = 0;
-    var cartVal3C = 0;
-    var totalIC = 0;
-    if (cartC.length === 0 && cart2C.length === 0 && cart3C.length === 0) {
-      document.querySelector("#mainC").textContent =
-        "Add Some Products To Cart";
-      totalPriceC();
-    } else {
-      displayCart1C();
-      displayCart2C();
-      displayCart3C();
-      totalPriceC();
-    }
+  <div id="lastDivFooter">
+    <div>
+      © Copyright 2023, Overstock.com®, Inc.<br>
+      799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+    </div>
+    <div>
+      <a style="color: white;" " href="">Privacy Policy</a>
+      <a  style=" color: white;" href="">Terms & Condition </a>
+      <a style="color: white;" href="">*Promotion Terms</a>
+      <a style="color: white;" href="">Ship to : <span style="color: brown;"> India</span></a>
+    </div>
+  </div>
+</body>
 
-    function displayCart1C() {
-      document.querySelector("#mainC").textContent = "";
-      cartC.map(function (elem, index) {
-        var divC = document.createElement("div");
-        var imageC = document.createElement("img");
-
-        imageC.setAttribute("class", "imageC");
-        imageC.setAttribute("src", elem.image_url);
-        imageC.setAttribute("alt", elem.name);
-        var h5C = document.createElement("p");
-        h5C.textContent = elem.name;
-
-        var boxC = document.createElement("div");
-        boxC.setAttribute("class", "boxcart");
-
-        var qytC = document.createElement("p");
-        qytC.textContent = "Qty : 1";
-
-        var priceC = document.createElement("b");
-        priceC.textContent = "INR " + elem.price;
-
-        cartVal1C += elem.price;
-
-        var removeC = document.createElement("button");
-        removeC.textContent = "Remove";
-        removeC.setAttribute("class", "removeC");
-        removeC.addEventListener("click", function () {
-          removeItem1C(elem, index);
-        });
-
-        var saveC=document.createElement("p");
-        saveC.textContent="Save For Later";
-
-        boxC.append(h5C, qytC, priceC, removeC,saveC);
-        divC.append(imageC, boxC);
-        divC.setAttribute("class", "cartProdC");
-        document.querySelector("#mainC").append(divC);
-      });
-    }
-
-    function removeItem1C(elem, index) {
-      cartC.splice(index, 1);
-      localStorage.setItem("aadToCart1", JSON.stringify(cartC));
-      window.location.reload();
-
-      displayCart1C();
-    }
-
-    function displayCart2C() {
-      document.querySelector("#main1C").textContent = "";
-
-      cart2C.map(function (elem, index) {
-        var div = document.createElement("div");
-        var image = document.createElement("img");
-
-        image.setAttribute("class", "imageC");
-        image.setAttribute("src", elem.image_url);
-        image.setAttribute("alt", elem.name);
-        var h5 = document.createElement("p");
-        h5.textContent = elem.name;
-
-        var box = document.createElement("div");
-        box.setAttribute("class", "boxcart");
-
-        var qyt = document.createElement("p");
-        qyt.textContent = "Qty : 1";
-
-        var price = document.createElement("b");
-        price.textContent = "INR " + elem.price;
-
-        cartVal2C += elem.price;
-
-        var remove = document.createElement("button");
-        remove.textContent = "Remove";
-        remove.setAttribute("class", "removeC");
-        remove.addEventListener("click", function () {
-          removeItem2C(elem, index);
-        });
-
-        var saveC=document.createElement("p");
-        saveC.textContent="Save For Later";
-
-        box.append(h5, qyt, price, remove,saveC);
-        div.append(image, box);
-        div.setAttribute("class", "cartProdC");
-        document.querySelector("#main1C").append(div);
-      });
-      console.log(cart2C.length);
-    }
-
-    function removeItem2C(elem, index) {
-      cart2C.splice(index, 1);
-      localStorage.setItem("aadToCart2", JSON.stringify(cart2C));
-      window.location.reload();
-      displayCart2C();
-    }
-
-    function displayCart3C() {
-      document.querySelector("#main2C").textContent = "";
-      cart3C.map(function (elem, index) {
-        var div = document.createElement("div");
-        var image = document.createElement("img");
-
-        image.setAttribute("class", "imageC");
-        image.setAttribute("src", elem.image_url);
-        image.setAttribute("alt", elem.name);
-        var h5 = document.createElement("p");
-        h5.textContent = elem.name;
-
-        var box = document.createElement("div");
-        box.setAttribute("class", "boxcart");
-
-        var qyt = document.createElement("p");
-        qyt.textContent = "Qty : 1";
-
-        var price = document.createElement("b");
-        price.textContent = "INR " + elem.price;
-
-        cartVal3C += elem.price;
-
-        var remove = document.createElement("button");
-        remove.textContent = "Remove";
-        remove.setAttribute("class", "removeC");
-        remove.addEventListener("click", function () {
-          removeItem3C(elem, index);
-        });
-
-        var saveC=document.createElement("p");
-        saveC.textContent="Save For Later";
-
-        box.append(h5, qyt, price, remove,saveC);
-        div.append(image, box);
-        div.setAttribute("class", "cartProdC");
-        document.querySelector("#main2C").append(div);
-      });
-      console.log(cart3C.length);
-    }
-
-    function removeItem3C(elem, index) {
-      cart3C.splice(index, 1);
-      localStorage.setItem("aadToCart3", JSON.stringify(cart3C));
-      window.location.reload();
-      displayCart3C();
-    }
-
-    function totalPriceC() {
-      totalIC = cartC.length + cart2C.length + cart3C.length;
-      cartValC = cartVal1C + cartVal2C + cartVal3C;
-
-      var totalans = document.getElementById("total-price");
-      totalans.innerHTML =cartValC;
-      
-      var num=document.getElementById("total-num");
-      num.innerHTML=totalIC;
-       
-      var promo=document.getElementById("promoC");
-       promo.addEventListener("click",addDiscount);
-
-
-      function addDiscount(){
-      var code=document.getElementById("inputC").value;
-      if(code==="masai30"){
-        document.getElementById("total-price").textContent=cartValC-((cartValC*30)/100);
-      }else{
-        alert("Promo Code Is Not Valid");
-      }
-    }
-     
-    }
-
-    //    document.getElementById("logoC1").addEventListener("click",logoFunC);
-    //    function logoFunC(){
-    //     window.location.replace("./index.html")
-    //    };
-
-
-  </script>
 </html>
+<script src="./js/cart.js"> </script>
+<script src="./js/navbarscripting.js"></script>
+<script src="./js/productdetailsjs.js"></script>
