@@ -1,6 +1,6 @@
 # Project-overstock
 
-This project is a clone of the popular e-commerce website "Overstock.com". It has been developed by a team of 5 members using HTML, CSS, and JavaScript.
+This project is a clone of the popular e-commerce website Overstock.com. It has been developed by a team of 5 members using HTML, CSS, and JavaScript.
 
 # Table of Contents
 Description
@@ -61,7 +61,7 @@ Once you have the project running, you can use the Overstock Clone website as yo
 Feel free to explore different features and functionalities, such as user registration, writing reviews, and tracking orders. Please note that this is a clone project and does not provide actual purchasing or shipping capabilities.
 
 # Deployed Link
-[Overstock.com](https://jade-cascaron-47a5f4.netlify.app/)
+[Overstock.com](https://jade-cascaron-47a5f4.netlify.app/)   'https://jade-cascaron-47a5f4.netlify.app'
 
 
 
